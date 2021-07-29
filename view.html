@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.4/material.indigo-pink.min.css">
+    <script src="https://storage.googleapis.com/code.getmdl.io/1.0.4/material.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="css/fitnessApp.css">
+    <title>Fitness Tracker</title>
+    </head>
+    
+    
+<body>
+    
+    <!-- Always shows a header, even in smaller screens. -->
+  <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+    
+  <header class="mdl-layout__header">
+    <div class="mdl-layout__header-row">
+   <!-- Navigation -->
+    <div class="mdl-layout-spacer"></div>
+    <nav class="mdl-navigation">
+        <a id = "deleteButton" class="mdl-navigation__link">Delete</a>
+      </nav>
+    </div>
+    
+  </header>
+      
+      <div class="mdl-layout__drawer">
+    <span class="mdl-layout-title">View</span>
+    <nav class="mdl-navigation">
+      <a class="mdl-navigation__link" href="index.html">Back to Menu</a>
+    </nav>
+      </div>
+    
+    <main id="mainTag" class="mdl-layout__content">
+        </br>
+      
+      <div id="map" style="width:90%;height:300px; margin:0 auto;"></div><!-- ///  -->
+      </br>
+      
+     <!--   <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored">Run1</button>-->
+              <table id="table" class="mdl-data-table mdl-js-data-table">
+                <thead>
+                    <tr>
+                        <th class="mdl-data-table__cell--non-numeric">Name</th>
+                        <th>Time(s)</th>
+                        <th>Distance(m)</th>
+                        <th>Speed(m/s)</th>
+                        <th>Calories</th>
+                    </tr>
+                  </thead>
+                  <tbody id = "tableBody">
+                      <!-- rows added in JS file //////////////////  -->
+      
+                  </tbody>
+              </table>
+    </main> 
+    </div>
+    
+    <script type="text/javascript" src="js/record.js"></script>
+<script async defer
+  src="https://maps.googleapis.com/maps/api/js?key=&amp;libraries=geometry&callback=showResults">   //removed  after ?////////////////////////
+    </script>
+    
+</body>
+    
+    
+</html>

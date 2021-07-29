@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.4/material.indigo-pink.min.css">
+<script src="https://storage.googleapis.com/code.getmdl.io/1.0.4/material.min.js"></script>
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    
+<title>Fitness Tracker</title>
+
+    <style type="text/css">
+      html, body { height: 100%; margin: 0; padding: 0; }
+      #map { height: 100%; }
+    </style> <!-- put in a seperate css file -->
+    </head>
+    
+    
+<body>
+    <!-- Always shows a header, even in smaller screens. -->
+  <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+    
+  <header class="mdl-layout__header">
+    <div class="mdl-layout__header-row">
+
+    <!-- Navigation -->
+    <div class="mdl-layout-spacer"></div>
+    <nav class="mdl-navigation">
+        <a class="mdl-navigation__link" id = "start" onClick = "start()">Start</a>
+        <a class="mdl-navigation__link" id = "stop" onClick = "stop()">Stop</a>
+        <a class="mdl-navigation__link" id = "clear" onClick = "clearRoute()">Reset</a>
+      </nav>
+    </div>
+  </header>
+      <!-- drawer menu -->
+      <div class="mdl-layout__drawer">
+    <span class="mdl-layout-title">Record</span>
+    <nav class="mdl-navigation">
+      <a class="mdl-navigation__link" href="index.html">Back to Menu</a>
+    </nav>
+      </div>
+    
+  <!--  <main class="mdl-layout__content">     -->
+        <div id="map">hello</div>
+    
+       
+      <script type="text/javascript" src="js/record.js"></script>
+      <script async defer
+  src="https://maps.googleapis.com/maps/api/js?key=&amp;libraries=geometry&callback=initMap">   //removed  after ?////////////////////////
+    </script>
+      
+    <!--  <script async defer src="https://maps.googleapis.com/maps/api/js?key=*snip*&callback=initMap">  -->
+     <!-- <script src="http://maps.googleapis.com/maps/api/js?key=####################&sensor=false" type="text/javascript"></script>  -->
+   <!--   <script src="https://maps.googleapis.com/maps/api/js?v=3&amp;key=&amp;libraries=drawing;callback=initMap"
+         async defer></script>  -->
+             
+      
+      
+      
+  <!--  </main> -->
+    </div>   
+
+</body>
+    
+    
+</html>
