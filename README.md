@@ -1,5 +1,5 @@
 
-"DO IT" is a fitness application I developed during first year of university.
+"DO IT" is a fitness application I developed in 2015. It has been tested on Android devices.
 
 
 Features:
